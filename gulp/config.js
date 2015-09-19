@@ -1,14 +1,26 @@
-var dest = "./build";
-var src = './src';
-var demoSrc = './demos';
+var src  = './src';
+var dev  = "./.tmp";
+var dist = './dist';
 
 module.exports = {
-    sass: {
-        src: [
-            src + "/**/*.scss"
-        ],
-        outputName: 'moondash.css',
-        dest: dest
+    global: {
+        src:  src,
+        dev:  dev,
+        dist: dist
     },
-    othertask: {}
+
+    browserSync: {
+        server: dev
+    },
+
+    swig: {
+        defaults: {
+            cache: false
+        },
+        setup: function (s) {
+            s.setDefaults({
+                loader: s.loaders.fs(src + '/_swig/')
+            });
+        }
+    }
 };

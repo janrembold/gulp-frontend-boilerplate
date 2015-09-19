@@ -1,3 +1,21 @@
+/**
+ * ToDo's
+ *
+ * useminPrepare
+ * usemin
+ * iconfont
+ * imgmin / pngopt
+ * autoprefixer
+ * csslint
+ * jslint
+ * modernizr
+ * handlebars
+ *
+ * cachebreaker
+ * notify
+ */
+
+
 var gulp = require('gulp');
 var requireDir = require('require-dir');
 
