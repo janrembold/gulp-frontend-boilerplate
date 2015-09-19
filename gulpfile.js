@@ -5,7 +5,6 @@
  * usemin
  * iconfont
  * imgmin / pngopt
- * autoprefixer
  * csslint
  * jslint
  * modernizr

@@ -9,6 +9,11 @@ module.exports = {
         dist: dist
     },
 
+    autoprefixer: {
+        browsers: ['last 2 versions'],
+        cascade: false
+    },
+
     browserSync: {
         server: dev
     },
@@ -23,4 +28,5 @@ module.exports = {
             });
         }
     }
+
 };
