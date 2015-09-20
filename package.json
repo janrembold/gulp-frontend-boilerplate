@@ -22,6 +22,7 @@
     "gulp-front-matter": "^1.2.3",
     "gulp-sass": "^2.0.4",
     "gulp-swig": "^0.7.4",
+    "gulp-usemin": "^0.3.14",
     "require-dir": "^0.3.0",
     "run-sequence": "^1.1.3"
   }

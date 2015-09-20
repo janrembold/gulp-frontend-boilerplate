@@ -15,7 +15,7 @@ module.exports = {
     },
 
     browserSync: {
-        server: dev
+        server: [dev, src]
     },
 
     swig: {

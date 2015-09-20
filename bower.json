@@ -1,0 +1,19 @@
+{
+  "name": "gulp-frontend-boilerplate",
+  "version": "0.0.0",
+  "homepage": "https://github.com/janrembold/gulp-frontend-boilerplate",
+  "authors": [
+    "Jan Rembold <janrembold@googlemail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "v4-dev"
+  }
+}
