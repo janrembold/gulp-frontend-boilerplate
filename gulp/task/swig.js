@@ -15,7 +15,7 @@ gulp.task('swig', function() {
 
 });
 
-gulp.task('swig:watch', function() {
+gulp.task('watch:swig', function() {
 
     gulp.watch([
         config.global.src + '/site/*.html',

@@ -10,7 +10,8 @@ gulp.task('default', ['serve']);
 // build templates for development
 gulp.task('dev', function(callback) {runSequence(
 
-    ['swig', 'sass'],
+    'clean:dev',
+    ['swig', 'sass', 'copy:js'],
     callback
 
 );});
@@ -18,10 +19,11 @@ gulp.task('dev', function(callback) {runSequence(
 gulp.task('serve', function(callback) {runSequence(
 
     'dev',
+    'browserSync',
     [
-        'connect',
-        'sass:watch',
-        'swig:watch'
+        'watch:sass',
+        'watch:swig',
+        'watch:js'
     ],
     callback
 
@@ -31,7 +33,9 @@ gulp.task('serve', function(callback) {runSequence(
 // build templates for production
 gulp.task('dist', function(callback) {runSequence(
 
+    'clean:dist',
     'dev',
+    'usemin',
     callback
 
 );});

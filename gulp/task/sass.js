@@ -15,7 +15,7 @@ gulp.task('sass', function () {
 
 });
 
-gulp.task('sass:watch', function () {
+gulp.task('watch:sass', function () {
 
     gulp.watch([
         config.global.src + '/resources/sass/**/*.scss'
